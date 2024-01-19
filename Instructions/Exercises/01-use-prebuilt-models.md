@@ -1,7 +1,7 @@
 ---
 lab:
   title: Usar modelos precompilados de Documento de inteligencia
-  module: Module 11 - Reading Text in Images and Documents
+  module: Module 6 - Document Intelligence
 ---
 
 # Usar modelos precompilados de Documento de inteligencia
@@ -13,15 +13,15 @@ En este ejercicio, configurará un recurso de Documento de inteligencia de Azure
 Para poder llamar al servicio Documento de inteligencia de Azure AI, debe crear un recurso para hospedar ese servicio en Azure:
 
 1. En una pestaña del explorador, abra Azure Portal en [https://portal.azure.com](https://portal.azure.com?azure-portal=true) e inicie sesión con la cuenta de Microsoft asociada a su suscripción de Azure.
-1. En la página principal de Azure Portal, navegue hasta el cuadro de búsqueda superior, escriba **Documento de inteligencia** y presione **Entrar**.
+1. En la página principal de Azure Portal, navegue al cuadro de búsqueda superior, escriba **Documento de inteligencia** y presione **Entrar**.
 1. En la página **Documento de inteligencia** seleccione **Crear**.
 1. En la página **Crear Documento de inteligencia**, use lo siguiente para configurar el recurso:
     - **Suscripción**: su suscripción de Azure.
     - **Grupo de recursos**: seleccione o cree un grupo de recursos con un nombre único, como *DocIntelligenceResources*.
     - **Región**: seleccione una región cercana.
     - **Nombre**: escriba un nombre único global.
-    - **Plan de tarifa**: seleccione **Gratis F0** (si no tiene un nivel Gratis disponible, seleccione **Estándar S0**).
-1. Seleccione **Revisar y crear** y, después, **Crear**. Espere mientras Azure crea el recurso de Documento de inteligencia de Azure AI.
+    - **Plan de tarifa**: seleccione **Free F0** (si no tiene un nivel Gratis disponible, seleccione **Standard S0**).
+1. Seleccione **Revisar y crear** y **Crear**. Espere mientras Azure crea el recurso de Documento de inteligencia de Azure AI.
 1. Cuando la implementación se complete, seleccione **Ir al recurso**. Mantenga esta página abierta para el resto de este ejercicio.
 
 ## Uso del modelo de lectura
@@ -47,7 +47,7 @@ Empecemos por usar el **Documento de inteligencia de Azure AI Studio** y el mode
 
 Ahora vamos a explorar la aplicación que usa el SDK del servicio Documento de inteligencia de Azure. Desarrollará la aplicación con Visual Studio Code. Los archivos de código de la aplicación se han proporcionado en un repositorio de GitHub.
 
-> **Sugerencia**: Si ya ha clonado el repositorio **mslearn-ai-document-intelligence**, ábralo en Visual Studio Code. De lo contrario, siga estos pasos para clonarlo en su entorno de desarrollo.
+> **Sugerencia**: Si ya ha clonado el repositorio **mslearn-ai-document-intelligence**, ábralo en Visual Studio Code. De lo contrario, siga estos pasos para clonarlo en el entorno de desarrollo.
 
 1. Inicie Visual Studio Code.
 1. Abra la paleta (Mayús + Ctrl + P) y ejecute un comando **Git: Clone** para clonar el repositorio `https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence` en una carpeta local (no importa qué carpeta).
@@ -210,9 +210,9 @@ Ahora está listo para usar el SDK para evaluar el archivo PDF.
 
 El programa muestra el nombre del proveedor, el nombre del cliente y el total de la factura con niveles de confianza. Compare los valores que notifica con la factura de ejemplo que abrió al principio de esta sección.
 
-## Limpieza
+## Limpiar
 
-Si ha terminado con el recurso de Azure, recuerde eliminar el recurso en [Azure Portal](https://portal.azure.com/?azure-portal=true) para evitar cargos adicionales.
+Si ha terminado de usar el recurso de Azure, recuerde eliminar el recurso en [Azure Portal](https://portal.azure.com/?azure-portal=true) para evitar cambios.
 
 ## Más información
 

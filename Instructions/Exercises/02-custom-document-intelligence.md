@@ -1,10 +1,10 @@
 ---
 lab:
   title: Extracción de datos de formularios
-  module: Module 11 - Reading Text in Images and Documents
+  module: Module 6 - Document Intelligence
 ---
 
-# Extracción de datos de formularios 
+# Extracción de datos de formularios
 
 Imagine que, en una empresa, los empleados actualmente deben comprar manualmente hojas de pedidos y escribir los datos en una base de datos. Les gustaría usar servicios de inteligencia artificial para mejorar el proceso de entrada de datos. Usted decide crear un modelo de aprendizaje automático que lea el formulario y genere datos estructurados que se puedan usar para actualizar automáticamente una base de datos.
 
@@ -31,7 +31,7 @@ Para usar el servicio Documento de inteligencia de Azure AI, necesita un recurso
 1. En la página principal de Azure Portal, navegue al cuadro de búsqueda superior, escriba **Documento de inteligencia** y presione **Entrar**.
 1. En la página **Documento de inteligencia** seleccione **Crear**.
 1. En la página **Crear Documento de inteligencia**, use lo siguiente para configurar el recurso:
-    - **Suscripción**: Su suscripción de Azure.
+    - **Suscripción**: su suscripción de Azure.
     - **Grupo de recursos**: seleccione o cree un grupo de recursos con un nombre único, como *DocIntelligenceResources*.
     - **Región**: seleccione una región cercana.
     - **Nombre**: escriba un nombre único global.
@@ -146,7 +146,7 @@ Ahora entrenará el modelo mediante los archivos cargados en la cuenta de almace
 
 1. En Visual Studio Code, en la carpeta **Labfiles/02-custom-document-intelligence**, seleccione el lenguaje que usa. Edite el archivo de configuración (**appsettings.json** o **.env**, según sus preferencias de lenguaje) para agregar los siguientes valores:
     - El punto de conexión de Documento de inteligencia.
-    - Clave de Documento de inteligencia.
+    - La clave del Documento de inteligencia.
     - El Id. de modelo generado que proporcionó cuando entrenó el modelo. Puede encontrarlo en la página **Modelos** de Document Intelligence Studio. Guarde los cambios mediante **Guardar**.
 
 1. En Visual Studio Code, abra el archivo de código de la aplicación cliente (*Program.cs* para C#, *test-model.py* para Python) y revise el código que contiene, especialmente que la imagen de la dirección URL haga referencia al archivo de este repositorio de GitHub en la web.
@@ -168,7 +168,7 @@ Ahora entrenará el modelo mediante los archivos cargados en la cuenta de almace
 
 1. Vea la salida y observe cómo la salida del modelo proporciona nombres de campo como `Merchant` y `CompanyPhoneNumber`.
 
-## Limpieza
+## Limpiar
 
 Si ha terminado de usar el recurso de Azure, recuerde eliminar el recurso en [Azure Portal](https://portal.azure.com/?azure-portal=true) para evitar cambios.
 
