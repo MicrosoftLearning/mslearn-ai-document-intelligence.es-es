@@ -44,11 +44,11 @@ Para crear un modelo compuesto, primero debemos crear dos o más modelos persona
 1. En **Mis proyectos**, seleccione **+ Crear un proyecto**.
 1. En el cuadro de texto **Nombre del proyecto**, escriba **Formularios 1040** y luego seleccione **Continuar**.
 1. En la página **Configure service resource** (Configurar recurso de servicio), en la lista desplegable **Suscripción**, seleccione la suscripción de Azure.
-1. En la lista desplegable **Grupo de recursos**, seleccione el **DocumentIntelligenceResources&lt;xxxx&gt** creado para usted.
-1. En la lista desplegable **Documento de inteligencia de Azure AI o Recurso del servicio de Azure AI**, seleccione **DocumentIntelligence&lt;xxxx&gt**
+1. En la lista desplegable **Grupo de recursos**, seleccione el **DocumentIntelligenceResources&lt;xxxx&gt;** creado para usted.
+1. En la lista desplegable **Documento de inteligencia de Azure AI o Recurso del servicio de Azure AI**, seleccione **DocumentIntelligence&lt;xxxx&gt;**.
 1. En la lista desplegable **Versión de API**, asegúrese de que **2023-10-31-preview** está seleccionado y, después, seleccione **Continuar**.
 1. En la página **Conectar origen de datos de entrenamiento**, en la lista desplegable **Suscripción**, seleccione la suscripción de Azure.
-1. En la lista desplegable **Grupo de recursos**, seleccione **DocumentIntelligenceResources&lt;xxxx&gt**.
+1. En la lista desplegable **Grupo de recursos**, seleccione **DocumentIntelligenceResources&lt;xxxx&gt;**.
 1. En la lista desplegable **Cuenta de almacenamiento**, seleccione la única cuenta de almacenamiento que se muestra. Si tiene varias cuentas de almacenamiento en la suscripción, elija la que empiece por *docintelstorage*
 1. En la lista desplegable **Contenedor de blobs**, seleccione **1040examples** y luego seleccione **Continuar**.
 1. En la página **Revisar y crear**, seleccione **Crear proyecto**.
@@ -91,11 +91,11 @@ Ahora, debe crear un segundo modelo, que entrenará en los formularios fiscales 
 1. En **Mis proyectos**, seleccione **+ Crear un proyecto**.
 1. En el cuadro de texto **Nombre del proyecto**, escriba **Formularios 1099** y luego seleccione **Continuar**.
 1. En la página **Configure service resource** (Configurar recurso de servicio), en la lista desplegable **Suscripción**, seleccione la suscripción de Azure.
-1. En la lista desplegable **Grupo de recursos**, seleccione **DocumentIntelligenceResources&lt;xxxx&gt**.
-1. En la lista desplegable **Documento de inteligencia de Azure AI o Recurso del servicio de Azure AI**, seleccione **DocumentIntelligence&lt;xxxx&gt**
+1. En la lista desplegable **Grupo de recursos**, seleccione **DocumentIntelligenceResources&lt;xxxx&gt;**.
+1. En la lista desplegable **Documento de inteligencia de Azure AI o Recurso del servicio de Azure AI**, seleccione **DocumentIntelligence&lt;xxxx&gt;**.
 1. En la lista desplegable **Versión de API**, asegúrese de que **20223-10-31-preview** está seleccionado y, después, seleccione **Continuar**.
 1. En la página **Configurar origen de datos de entrenamiento**, en la lista desplegable **Suscripción**, seleccione la suscripción de Azure.
-1. En la lista desplegable **Grupo de recursos**, seleccione **DocumentIntelligenceResources&lt;xxxx&gt**.
+1. En la lista desplegable **Grupo de recursos**, seleccione **DocumentIntelligenceResources&lt;xxxx&gt;**.
 1. En la lista desplegable **Cuenta de almacenamiento**, seleccione la única cuenta de almacenamiento que se muestra.
 1. En la lista desplegable **Contenedor de blobs**, seleccione **1099examples** y luego **Continuar**.
 1. En la página **Revisar y crear**, seleccione **Crear proyecto**.
@@ -144,7 +144,7 @@ Ahora que el modelo compuesto está completo, vamos a probarlo con un formulario
 1. En Studio de Documento de inteligencia de Azure AI, seleccione la página **Prueba**, seleccione  **TaxFormsModel** en la lista desplegable.
 1. Seleccione **Examinar archivos** y, a continuación, vaya a la ubicación donde ha clonado el repositorio.
 1. Seleccione **03-composed-model/trainingdata/TestDoc/f1040_7.pdf** y, a continuación, seleccione **Abrir**.
-1. Seleccione **Ejecutar análisis**. Documento de inteligencia de Azure AI analiza el formulario mediante el modelo compuesto.
+1. Seleccione **Run analysis** (Ejecutar análisis). Documento de inteligencia de Azure AI analiza el formulario mediante el modelo compuesto.
 1. El documento que ha analizado es un ejemplo del formulario fiscal 1040. Compruebe la propiedad **DocType** para ver si se ha usado el modelo personalizado correcto. Compruebe también los valores **Nombre**, **Apellidos**, **Ciudad** y **Estado** que ha identificado el modelo.
 
 ## Limpieza de recursos
