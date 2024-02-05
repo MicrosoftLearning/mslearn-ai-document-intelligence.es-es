@@ -33,6 +33,8 @@ Usaremos un script para crear el recurso de ADocumento de inteligencia de Azure 
    ./setup.ps1
    ```
 
+   > **IMPORTANTE**: El último recurso creado por el script es el servicio Documento de inteligencia de Azure AI. Si se produjese un error en ese comando debido a que ya tuviera un recurso de nivel F0, use ese recurso para este laboratorio o cree uno manualmente con el nivel S0 en Azure Portal.
+
 ## Creación del modelo personalizado de Formularios 1040
 
 Para crear un modelo compuesto, primero debemos crear dos o más modelos personalizados. Para crear el primer modelo personalizado, haga lo siguiente:
