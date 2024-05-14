@@ -62,14 +62,14 @@ Ahora, vamos a etiquetar los campos en los formularios de ejemplo:
 
 1. En la página **Datos de etiqueta**, en la parte superior derecha de la página, seleccione **+ Agregar un campo** y luego **Campo**.
 1. Escriba **Nombre** y luego presione *Entrar*.
-1. En el documento, seleccione **John** y luego **Nombre**.
-1. En la parte superior derecha de la página, seleccione **+** y luego **Campo**.
+1. Seleccione el documento llamado **f1040_1.pdf** en la lista de la izquierda, seleccione **John** y, a continuación, seleccione **FirstName**.
+1. En la parte superior derecha de la página, seleccione **+ Agregar un campo** y, luego, **Campo**.
 1. Escriba **Apellidos** y luego presione *Entrar*.
 1. En el documento, seleccione **Doe** y luego **Apellidos**.
-1. En la parte superior derecha de la página, seleccione **+** y luego **Campo**.
+1. En la parte superior derecha de la página, seleccione **+ Agregar un campo** y, luego, **Campo**.
 1. Escriba **Ciudad** y luego presione *Entrar*.
 1. En el documento, seleccione **Los Ángeles** y luego **Ciudad**.
-1. En la parte superior derecha de la página, seleccione **+** y luego **Campo**.
+1. En la parte superior derecha de la página, seleccione **+ Agregar un campo** y, luego, **Campo**.
 1. Escriba **Estado** y luego presione *Entrar*.
 1. En el documento, seleccione **CA** y luego **Estado**.
 1. Repita el proceso de etiquetado de los formularios restantes de la lista de la izquierda con las etiquetas que creó. Etiquete los mismos cuatro campos: *Nombre*, *Apellidos*, *Ciudad* y *Estado*.
@@ -107,16 +107,16 @@ Ahora, debe crear un segundo modelo, que entrenará en los formularios fiscales 
 
 Ahora, etiquete los formularios de ejemplo con algunos campos:
 
-1. En la página **Label data** (Datos de etiqueta), en la parte superior derecha de la página, seleccione **+** y luego **Campo**.
+1. En la página **Datos de etiqueta**, en la parte superior derecha de la página, seleccione **+ Agregar un campo** y luego **Campo**.
 1. Escriba **Nombre** y luego presione *Entrar*.
-1. En el documento, seleccione **John** y luego **Nombre**.
-1. En la parte superior derecha de la página, seleccione **+** y luego **Campo**.
+1. Seleccione el documento llamado **f1099msc_payer.pdf**, seleccione **John** y, a continuación, seleccione **FirstName**.
+1. En la parte superior derecha de la página, seleccione **+ Agregar un campo** y, luego, **Campo**.
 1. Escriba **Apellidos** y luego presione *Entrar*.
 1. En el documento, seleccione **Doe** y luego **Apellidos**.
-1. En la parte superior derecha de la página, seleccione **+** y luego **Campo**.
+1. En la parte superior derecha de la página, seleccione **+ Agregar un campo** y, luego, **Campo**.
 1. Escriba **Ciudad** y luego presione *Entrar*.
 1. En el documento, seleccione **New Haven** y luego **Ciudad**.
-1. En la parte superior derecha de la página, seleccione **+** y luego **Campo**.
+1. En la parte superior derecha de la página, seleccione **+ Agregar un campo** y, luego, **Campo**.
 1. Escriba **Estado** y luego presione *Entrar*.
 1. En el documento, seleccione **CT** y luego **Estado**.
 1. Repita el proceso de etiquetado en los formularios restantes de la lista de la izquierda. Etiquete los mismos cuatro campos: *Nombre*, *Apellidos*, *Ciudad* y *Estado*.

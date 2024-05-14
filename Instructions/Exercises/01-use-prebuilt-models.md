@@ -32,14 +32,15 @@ Empecemos por usar el **Documento de inteligencia de Azure AI Studio** y el mode
 1. En **Análisis de documentos**, seleccione el icono **Leer**.
 1. Si se le pide que inicie sesión en su cuenta, use las credenciales de Azure.
 1. Si se le pregunta qué recurso de Documento de inteligencia de Azure AI va a usar, seleccione la suscripción y el nombre del recurso que usó al crear el recurso de Documento de inteligencia de Azure AI.
-1. En la lista de documentos de la izquierda, seleccione **read-german.png**.
+1. En la lista de documentos de la izquierda, seleccione **read-german.pdf**.
 
     ![Captura de pantalla en la que se muestra la página Lectura de Documento de inteligencia de Azure AI Studio.](../media/read-german-sample.png#lightbox)
 
+1. En la parte superior izquierda, seleccione **Opciones de análisis** y, a continuación, marque la casilla **Idioma** (en **Detección opcional**) en el panel **Opciones de análisis** y haga clic en **Guardar**. 
 1. En la parte superior izquierda, seleccione **Ejecutar análisis**.
 1. Una vez completado el análisis, el texto extraído de la imagen se muestra a la derecha en la pestaña **Contenido**. Revise este texto y compárelo con el texto de la imagen original para comprobar su exactitud.
 1. Seleccione la pestaña **Resultado**. Esta pestaña muestra el código JSON extraído. 
-1. Desplácese hasta la parte inferior del código JSON en la pestaña **Resultado**. Observe que el modelo de lectura ha detectado el idioma de cada intervalo. La mayoría de los intervalos están en alemán (código de idioma `de`), pero el último intervalo está en inglés (código de idioma `en`).
+1. Desplácese hasta la parte inferior del código JSON en la pestaña **Resultado**. Observe que el modelo de lectura ha detectado el idioma de cada intervalo. La mayoría de los intervalos están en alemán (código de idioma `de`), pero puede encontrar otros códigos de idioma en los intervalos (por ejemplo, inglés: código de idioma `en`, en uno de los últimos intervalos).
 
     ![Captura de pantalla en la que se muestra la detección de idioma para dos intervalos en los resultados del modelo de lectura de Documento de inteligencia de Azure AI Studio.](../media/language-detection.png#lightbox)
 
@@ -137,7 +138,6 @@ Ahora está listo para usar el SDK para evaluar el archivo PDF.
 
     ```csharp
     AnalyzeDocumentOperation operation = await client.AnalyzeDocumentFromUriAsync(WaitUntil.Completed, "prebuilt-invoice", fileUri);
-    await operation.WaitForCompletionAsync();
     ```
 
     **Python**
