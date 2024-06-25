@@ -16,6 +16,8 @@ Usaremos un script para crear el recurso de ADocumento de inteligencia de Azure 
 1. Abra la paleta (Mayús + Ctrl + P) y ejecute un comando **Git: Clone** para clonar el repositorio `https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence` en una carpeta local (no importa qué carpeta).
 1. Cuando se haya clonado el repositorio, abra la carpeta en Visual Studio Code.
 
+    > **Nota**: Si Visual Studio Code muestra un mensaje emergente para solicitarle que confíe en el código que está abriendo, haga clic en la opción **Sí, confío en los autores** en el elemento emergente.
+    
     > **Nota**: Si se le pide que agregue los recursos necesarios para compilar y depurar, seleccione **Ahora no**. Si hay otros elementos emergentes de Visual Studio Code, puede descartarlos de forma segura.
 
 1. Expanda la carpeta **Labfiles** en el panel izquierdo y haga clic con el botón derecho en el directorio **03-composed-model**. Seleccione la opción de abrir en el terminal integrado y ejecute el siguiente script:
