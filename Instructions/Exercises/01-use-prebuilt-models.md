@@ -40,7 +40,7 @@ Empecemos por usar el **Documento de inteligencia de Azure AI Studio** y el mode
 1. En la parte superior izquierda, seleccione **Ejecutar análisis**.
 1. Una vez completado el análisis, el texto extraído de la imagen se muestra a la derecha en la pestaña **Contenido**. Revise este texto y compárelo con el texto de la imagen original para comprobar su exactitud.
 1. Seleccione la pestaña **Resultado**. Esta pestaña muestra el código JSON extraído. 
-1. Desplácese hasta la parte inferior del código JSON en la pestaña **Resultado**. Observe que el modelo de lectura ha detectado el idioma de cada intervalo. La mayoría de los intervalos están en alemán (código de idioma `de`), pero puede encontrar otros códigos de idioma en los intervalos (por ejemplo, inglés: código de idioma `en`, en uno de los últimos intervalos).
+1. Desplázate hasta la parte inferior del código JSON en la pestaña **Resultado**. Observa que el modelo de lectura ha detectado el idioma de cada intervalo indicado por `locale`. La mayoría de los intervalos están en alemán (código de idioma `de`), pero puede encontrar otros códigos de idioma en los intervalos (por ejemplo, inglés: código de idioma `en`, en uno de los últimos intervalos).
 
     ![Captura de pantalla en la que se muestra la detección de idioma para dos intervalos en los resultados del modelo de lectura de Documento de inteligencia de Azure AI Studio.](../media/language-detection.png#lightbox)
 
