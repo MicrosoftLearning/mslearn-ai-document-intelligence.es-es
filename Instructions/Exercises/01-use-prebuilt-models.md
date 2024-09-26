@@ -14,7 +14,7 @@ Para poder llamar al servicio Documento de inteligencia de Azure AI, debe crear 
 
 1. En una pestaña del explorador, abra Azure Portal en [https://portal.azure.com](https://portal.azure.com?azure-portal=true) e inicie sesión con la cuenta de Microsoft asociada a su suscripción de Azure.
 1. En la página principal de Azure Portal, navegue al cuadro de búsqueda superior, escriba **Documento de inteligencia** y presione **Entrar**.
-1. En la página **Documento de inteligencia** seleccione **Crear**.
+1. En la página **Documento de inteligencia**, selecciona **Crear documento de inteligencia**.
 1. En la página **Crear Documento de inteligencia**, use lo siguiente para configurar el recurso:
     - **Suscripción**: su suscripción de Azure.
     - **Grupo de recursos**: seleccione o cree un grupo de recursos con un nombre único, como *DocIntelligenceResources*.
@@ -81,7 +81,7 @@ Se han proporcionado aplicaciones para C# y Python, así como un archivo PDF de 
     **Python**:
 
     ```powershell
-    pip install azure-ai-formrecognizer==3.3.0
+    pip install azure-ai-formrecognizer==3.3.3
     ```
 
 ## Agregar código para usar el servicio Documento de inteligencia de Azure.
