@@ -49,14 +49,14 @@ Para crear un modelo compuesto, primero debemos crear dos o más modelos persona
 1. En el cuadro de texto **Nombre del proyecto**, escriba **Formularios 1040** y luego seleccione **Continuar**.
 1. En la página **Configure service resource** (Configurar recurso de servicio), en la lista desplegable **Suscripción**, seleccione la suscripción de Azure.
 1. En la lista desplegable **Grupo de recursos**, seleccione el **DocumentIntelligenceResources&lt;xxxx&gt;** creado para usted.
-1. En la lista desplegable **Documento de inteligencia de Azure AI o Recurso del servicio de Azure AI**, seleccione **DocumentIntelligence&lt;xxxx&gt;**.
-1. En la lista desplegable **Versión de API**, asegúrese de que **2023-10-31-preview** está seleccionado y, después, seleccione **Continuar**.
+1. En la lista desplegable **Documento de inteligencia o recurso de servicio cognitivo**, selecciona **DocumentIntelligence&lt;xxxx&gt;**.
+1. En la lista desplegable **Versión de API**, asegúrate de que **2024-07-31 (versión preliminar)** está seleccionada y después selecciona **Continuar**.
 1. En la página **Conectar origen de datos de entrenamiento**, en la lista desplegable **Suscripción**, seleccione la suscripción de Azure.
 1. En la lista desplegable **Grupo de recursos**, seleccione **DocumentIntelligenceResources&lt;xxxx&gt;**.
 1. En la lista desplegable **Cuenta de almacenamiento**, seleccione la única cuenta de almacenamiento que se muestra. Si tiene varias cuentas de almacenamiento en la suscripción, elija la que empiece por *docintelstorage*
 1. En la lista desplegable **Contenedor de blobs**, seleccione **1040examples** y luego seleccione **Continuar**.
 1. En la página **Revisar y crear**, seleccione **Crear proyecto**.
-1. Seleccione **Ejecutar diseño** en la ventana emergente *Iniciar etiquetado ahora* y espere a que se complete el análisis.
+1. Selecciona **Ejecutar ahora** en *Ejecutar diseño* en la ventana emergente *Iniciar etiquetado ahora* y espera a que se complete el análisis.
 
 ## Etiquetado del modelo personalizado de Formularios 1040
 
@@ -74,7 +74,7 @@ Ahora, vamos a etiquetar los campos en los formularios de ejemplo:
 1. En la parte superior derecha de la página, seleccione **+ Agregar un campo** y, luego, **Campo**.
 1. Escriba **Estado** y luego presione *Entrar*.
 1. En el documento, seleccione **CA** y luego **Estado**.
-1. Repita el proceso de etiquetado de los formularios restantes de la lista de la izquierda con las etiquetas que creó. Etiquete los mismos cuatro campos: *Nombre*, *Apellidos*, *Ciudad* y *Estado*.
+1. Repita el proceso de etiquetado de los formularios restantes de la lista de la izquierda con las etiquetas que creó. Etiquete los mismos cuatro campos: *Nombre*, *Apellidos*, *Ciudad* y *Estado*. Observa que uno de los documentos no tiene datos de ciudad o estado.
 
 > **IMPORTANTE** Para este ejercicio, solo se usan cinco formularios de ejemplo y se etiquetan únicamente cuatro campos. En los modelos reales, debe usar tantas muestras como sea posible para maximizar la precisión y la confianza de las predicciones. También debe etiquetar todos los campos disponibles en los formularios, en lugar de solo cuatro campos.
 
@@ -82,7 +82,7 @@ Ahora, vamos a etiquetar los campos en los formularios de ejemplo:
 
 Ahora que los formularios de ejemplo están etiquetados, podemos entrenar el primer modelo personalizado:
 
-1. En Documento de inteligencia de Azure AI Studio, seleccione **Entrenar**.
+1. En Documento de inteligencia de Azure AI Studio, en la parte superior derecha de la pantalla, selecciona **Entrenar**.
 1. En el cuadro de diálogo **Train a new model** (Entrenar un nuevo modelo), en el cuadro de texto **Id. de modelo**, escriba **ModeloFormularios1040**.
 1. En la lista desplegable **Build mode** (Modo de compilación), seleccione **Plantilla** y luego **Entrenar**. 
 1. En el cuadro de diálogo**Training in progress** (Entrenamiento en curso), seleccione **Ir a Modelos**.
@@ -96,14 +96,15 @@ Ahora, debe crear un segundo modelo, que entrenará en los formularios fiscales 
 1. En el cuadro de texto **Nombre del proyecto**, escriba **Formularios 1099** y luego seleccione **Continuar**.
 1. En la página **Configure service resource** (Configurar recurso de servicio), en la lista desplegable **Suscripción**, seleccione la suscripción de Azure.
 1. En la lista desplegable **Grupo de recursos**, seleccione **DocumentIntelligenceResources&lt;xxxx&gt;**.
-1. En la lista desplegable **Documento de inteligencia de Azure AI o Recurso del servicio de Azure AI**, seleccione **DocumentIntelligence&lt;xxxx&gt;**.
-1. En la lista desplegable **Versión de API**, asegúrese de que **20223-10-31-preview** está seleccionado y, después, seleccione **Continuar**.
+1. En la lista desplegable **Documento de inteligencia o recurso de servicio cognitivo**, selecciona **DocumentIntelligence&lt;xxxx&gt;**.
+1. En la lista desplegable **Versión de API**, asegúrate de que **2024-07-31 (versión preliminar)** está seleccionada y después selecciona **Continuar**.
 1. En la página **Configurar origen de datos de entrenamiento**, en la lista desplegable **Suscripción**, seleccione la suscripción de Azure.
 1. En la lista desplegable **Grupo de recursos**, seleccione **DocumentIntelligenceResources&lt;xxxx&gt;**.
 1. En la lista desplegable **Cuenta de almacenamiento**, seleccione la única cuenta de almacenamiento que se muestra.
 1. En la lista desplegable **Contenedor de blobs**, seleccione **1099examples** y luego **Continuar**.
 1. En la página **Revisar y crear**, seleccione **Crear proyecto**.
-1. Seleccione **Ejecutar diseño** en la ventana emergente *Iniciar etiquetado ahora* y espere a que se complete el análisis.
+1. Selecciona el botón desplegable de **Ejecutar diseño** y selecciona **Documentos no analizados**.
+1. Esperar a que finalice el análisis.
 
 ## Etiquetado del modelo personalizado de Formularios 1099
 
@@ -121,31 +122,24 @@ Ahora, etiquete los formularios de ejemplo con algunos campos:
 1. En la parte superior derecha de la página, seleccione **+ Agregar un campo** y, luego, **Campo**.
 1. Escriba **Estado** y luego presione *Entrar*.
 1. En el documento, seleccione **CT** y luego **Estado**.
-1. Repita el proceso de etiquetado en los formularios restantes de la lista de la izquierda. Etiquete los mismos cuatro campos: *Nombre*, *Apellidos*, *Ciudad* y *Estado*.
+1. Repita el proceso de etiquetado en los formularios restantes de la lista de la izquierda. Etiquete los mismos cuatro campos: *Nombre*, *Apellidos*, *Ciudad* y *Estado*. Observe que dos de los documentos no tienen ningún dato de nombre que etiquetar.
 
 ## Entrenamiento del modelo personalizado de Formularios 1099
 
 Ahora puede entrenar el segundo modelo personalizado:
 
-1. En Documento de inteligencia de Azure AI Studio, seleccione **Entrenar**.
+1. EEn Documento de inteligencia de Azure AI Studio, en la parte superior derecha, selecciona **Entrenar**.
 1. En el cuadro de diálogo **Train a new model** (Entrenar un nuevo modelo), en el cuadro de texto **Id. de modelo**, escriba **ModeloFormularios1099**.
 1. En la lista desplegable **Build mode** (Modo de compilación), seleccione **Plantilla** y luego **Entrenar**.
 1. En el cuadro de diálogo**Training in progress** (Entrenamiento en curso), seleccione **Ir a Modelos**.
 1. Este proceso puede tardar varios minutos. Actualice el explorador ocasionalmente hasta que ambos modelos muestren el estado **correcto**.
 
-## Creación y ensamblado de un modelo compuesto
+## Uso del modelo
 
-Los dos modelos personalizados, que analizan los formularios fiscales 1040 y 1099, ahora están completos. Puede continuar con la creación del modelo compuesto:
+Ahora que el modelo está completo, vamos a probarlo con un formulario de ejemplo:
 
-1. En la página Modelos de Documento de inteligencia de Azure AI, seleccione **1040FormsModel** y **1099FormsModel**.
-1. En la parte superior de la lista de modelos, seleccione **Redactar**.
-1. En el cuadro de diálogo **Compose a new model** (Redactar un nuevo modelo), en el cuadro de texto **Id. de modelo**, escriba **ModeloFormulariosFiscales** y luego seleccione **Redactar**. Documento de inteligencia de Azure AI crea el modelo compuesto y lo muestra en la lista de modelos personalizados:
-
-## Uso del modelo compuesto
-
-Ahora que el modelo compuesto está completo, vamos a probarlo con un formulario de ejemplo:
-
-1. En Studio de Documento de inteligencia de Azure AI, seleccione la página **Prueba**, seleccione  **TaxFormsModel** en la lista desplegable.
+1. En Documento de inteligencia de Azure AI Studio, selecciona la página **Modelos**, selecciona el **1040FormsModel**.
+1. Seleccione **Probar**.
 1. Seleccione **Examinar archivos** y, a continuación, vaya a la ubicación donde ha clonado el repositorio.
 1. Seleccione **03-composed-model/trainingdata/TestDoc/f1040_7.pdf** y, a continuación, seleccione **Abrir**.
 1. Seleccione **Run analysis** (Ejecutar análisis). Documento de inteligencia de Azure AI analiza el formulario mediante el modelo compuesto.

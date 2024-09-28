@@ -126,9 +126,10 @@ Ahora entrenará el modelo mediante los archivos cargados en la cuenta de almace
         - Seleccione *Continuar*.
     - Seleccione *Crear proyecto*.
 
-1. Una vez creado el proyecto, seleccione **Entrenar** para entrenar el modelo. Use la siguiente configuración:
+1. Una vez creado el proyecto, en la parte superior derecha de la pantalla, selecciona **Entrenar** para entrenar tu modelo. Use la siguiente configuración:
     - **Id. del modelo**: *proporcione un nombre único global (necesitará el nombre de Id. del modelo en el siguiente paso).* 
     - **Compilar modo**: plantilla.
+1. Selecciona **Go to Models**.
 1. El entrenamiento puede tardar algún tiempo. Verá una notificación cuando se complete.
 
 ## Pruebe el modelo personalizado de Documento de inteligencia
@@ -144,7 +145,7 @@ Ahora entrenará el modelo mediante los archivos cargados en la cuenta de almace
     **Python**:
 
     ```powershell
-    pip install azure-ai-formrecognizer==3.3.0
+    pip install azure-ai-formrecognizer==3.3.3
     ```
 
 1. En Visual Studio Code, en la carpeta **Labfiles/02-custom-document-intelligence**, seleccione el lenguaje que usa. Edite el archivo de configuración (**appsettings.json** o **.env**, según sus preferencias de lenguaje) para agregar los siguientes valores:
