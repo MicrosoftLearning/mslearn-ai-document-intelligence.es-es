@@ -16,13 +16,13 @@ Ahora vamos a usar el SDK del servicio para desarrollar una aplicación mediante
 
 > **Sugerencia**: Si ya ha clonado el repositorio **mslearn-ai-document-intelligence**, ábralo en Visual Studio Code. De lo contrario, siga estos pasos para clonarlo en el entorno de desarrollo.
 
-1. Inicie Visual Studio Code.
-1. Abra la paleta (Mayús + Ctrl + P) y ejecute un comando **Git: Clone** para clonar el repositorio `https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence` en una carpeta local (no importa qué carpeta).
-1. Cuando se haya clonado el repositorio, abra la carpeta en Visual Studio Code.
+1. Inicia Visual Studio Code.
+1. Abre la paleta (Mayús + Ctrl + P) y ejecuta un comando **Git: Clone** para clonar el repositorio `https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence` en una carpeta local (no importa qué carpeta).
+1. Cuando se haya clonado el repositorio, abre la carpeta en Visual Studio Code.
 
-    > **Nota**: Si Visual Studio Code muestra un mensaje emergente para solicitarle que confíe en el código que está abriendo, haga clic en la opción **Sí, confío en los autores** en el elemento emergente.
+    > **Nota**: si Visual Studio Code muestra un mensaje emergente para solicitarte que confíes en el código que estás abriendo, haz clic en la opción **Yes, I trust the authors** en el elemento emergente.
 
-1. Espere mientras se instalan archivos adicionales para admitir los proyectos de código de C# en el repositorio.
+1. Espera mientras se instalan archivos adicionales para admitir los proyectos de código de C# en el repositorio.
 
     > **Nota**: Si se le pide que agregue los recursos necesarios para compilar y depurar, seleccione **Ahora no**. Si aparece el mensaje *Se ha detectado un proyecto de función de Azure en la carpeta*, puede cerrarlo de forma segura.
 
@@ -97,11 +97,7 @@ Después, **guarde** los cambios.
 1. En el terminal de la carpeta **Labfiles/02-custom-document-intelligence**, escriba el siguiente comando para ejecutar el script:
 
     ```PowerShell
-    $currentdir=(Get-Item .).FullName
-    cd ..
     ./setup.cmd
-    cd $currentdir
-
     ```
 
 1. Cuando se complete el script, revise la salida mostrada.
